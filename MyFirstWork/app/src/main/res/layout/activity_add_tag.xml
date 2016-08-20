@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGreyBg"
+    tools:context="com.kizi.myfirstwork.Activity.AddTagActivity">
+
+    <EditText
+        android:paddingTop="7dp"
+        android:id="@+id/et_add_tag"
+        android:textCursorDrawable="@color/colorGreyBg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorBackgroundAccent"
+        android:hint="   多个标签用逗号分隔。"
+        android:textColorHint="@color/colorGrey"
+        android:paddingLeft="10dp"
+        android:singleLine="false"
+        android:gravity="top"
+        />
+    <TextView
+        android:background="@color/colorBackgroundAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="推荐标签"
+        android:layout_marginTop="1.5dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

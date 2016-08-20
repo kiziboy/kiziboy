@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kizi.myfirstwork.Activity.GetGpsActivity">
+    <RelativeLayout
+        android:background="@color/colorBackgroundAccent"
+        android:paddingLeft="5dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_gps"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_search"
+            android:hint="搜索或创建位置"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColorHint="@color/colorSecondText"
+            android:layout_toLeftOf="@+id/tv_cancel_gps"
+            />
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cancel_gps"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="确认"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/colorGreyBg"
+        android:id="@+id/recycler_gps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
